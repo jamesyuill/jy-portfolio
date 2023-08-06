@@ -70,7 +70,7 @@
 }
 
 .projects{
-  height:200vh;
+  height:100vh;
   padding-left:1rem;
   
 }
@@ -225,6 +225,30 @@ padding: 0.5rem;
   background-color: rgba(228, 248, 255, 60%);
 }
 
+.socials{
+  margin-top: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  gap:1rem;
+  border:2px solid black;
+  padding: 1rem;
+  width:18rem;
+  border-radius: 5px;
+  background-color: rgba(228, 248, 255, 60%);
+}
+
+.social-links{
+display:flex;
+flex-direction: column;
+gap:0.5rem;
+width:30%;
+
+}
+
+.social-links link{
+  padding: 1rem;
+}
+
 .playground-article{
   display: flex;
   flex-wrap:wrap;
@@ -336,6 +360,7 @@ a{
 }
 
 .link:hover{
+  display: inline;
   background-color: hotpink;
   cursor: pointer;
   
