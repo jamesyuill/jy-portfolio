@@ -12,11 +12,19 @@ export default function Jynews() {
     <article className="project-card-article">
       <div className="project-card-div">
         <h3>Northcoders Solo Full Stack Project: JY News</h3>
-        <div className="desc-img">
+
+        <div className="image-div">
+          <a
+            href="http://jy-news-fullstack-project.netlify.app/"
+            target="_blank"
+          >
+            <img src="/project-images/jy-news-desktop-and-mobile.png" />
+          </a>
+        </div>
+        <div className="desc">
           <div className="description" style={{ whitespace: 'pre-line' }}>
             <br />
             <h4>Back End Server</h4>
-
             <p>
               - Successfully built a RESTful API and back end server using
               Express, SQL and PostGres.
@@ -44,21 +52,25 @@ export default function Jynews() {
               accessibility
             </p>
           </div>
-          <div className="image-div">
-            <a
-              href="http://jy-news-fullstack-project.netlify.app/"
-              target="_blank"
-            >
-              <img src="/images/jy-news-mobile.png" />
-            </a>
-          </div>
         </div>
         <div className="github-link">
           <a
             href="https://github.com/jamesyuill/fe-react-data-visualisation"
             target="_blank"
           >
-            <p className="p-link">View the Github</p>
+            <p className="p-link">FrontEnd Github</p>
+          </a>
+          <a
+            href="https://github.com/jamesyuill/fe-react-data-visualisation"
+            target="_blank"
+          >
+            <p className="p-link">BackEnd Github</p>
+          </a>
+          <a
+            href="https://github.com/jamesyuill/fe-react-data-visualisation"
+            target="_blank"
+          >
+            <p className="p-link">Deployed Site</p>
           </a>
         </div>
         <div className="project-tech-stack">

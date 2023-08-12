@@ -46,15 +46,14 @@ export const Projects = ({ projectsSection }) => {
         >
           Pokemon Battle App
         </Link>
-        |
-        <Link
+        {/* <Link
           className="projects-nav-link"
           onClick={() => {
             setDisplayProject(4);
           }}
         >
           Cable TV Website
-        </Link>
+        </Link> */}
       </nav>
       <main>{projectsList[displayProject]}</main>
     </div>

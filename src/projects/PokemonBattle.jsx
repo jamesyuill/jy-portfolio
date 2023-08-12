@@ -4,8 +4,16 @@ export default function PokemonBattle() {
   return (
     <article className="project-card-article">
       <div className="project-card-div">
-        <h3>Mini React Application: Pokemon Battle!</h3>
-        <div className="desc-img">
+        <h3>Northcoders Mini React App: Pokemon Battle!</h3>
+        <div className="image-div">
+          <a
+            href="https://github.com/jamesyuill/fe-react-data-visualisation/blob/main/src/assets/Final%20Project%20Screenshot.png"
+            target="_blank"
+          >
+            <img src="/project-images/pokemon-battle-desktop-and-mobile.png" />
+          </a>
+        </div>
+        <div className="desc">
           <div className="description" style={{ whitespace: 'pre-line' }}>
             <br />
 
@@ -17,14 +25,6 @@ export default function PokemonBattle() {
               - One of our first React projects that taught us how to hold data
               in state and make third-party API requests.
             </p>
-          </div>
-          <div className="image-div">
-            <a
-              href="https://github.com/jamesyuill/fe-react-data-visualisation/blob/main/src/assets/Final%20Project%20Screenshot.png"
-              target="_blank"
-            >
-              <img src="/images/pokemon-mini-app-phonedisplay.png" />
-            </a>
           </div>
         </div>
         <div className="github-link">
