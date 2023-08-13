@@ -202,6 +202,22 @@
   display: flex;
 }
 
+.send-success {
+  color: hotpink;
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.send-failure {
+  background-color: hotpink;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .contact-form {
   margin-top: 1rem;
   display: flex;
@@ -213,6 +229,11 @@
   width: auto;
   border-radius: 5px;
   background-color: rgba(228, 248, 255, 60%);
+}
+
+.contact-form button {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
 }
 
 .input {
@@ -235,7 +256,12 @@
 
 .icons {
   display: flex;
-  gap: 1rem;
+  justify-content: space-around;
+}
+
+.icon-link:hover {
+  background-color: hotpink;
+  border-radius: 5px;
 }
 
 .playground-article {
