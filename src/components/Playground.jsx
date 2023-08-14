@@ -1,3 +1,6 @@
+import { Link, Route, Routes } from 'react-router-dom';
+import TestPage from '../pages/TestPage';
+
 export const Playground = ({ playgroundSection }) => {
   return (
     <div className="playground" ref={playgroundSection}>
@@ -77,9 +80,9 @@ export const Playground = ({ playgroundSection }) => {
         </div>
 
         <div className="playground-card">
-          <a href="/testpage" target="_blank">
+          <Link to="/testpage">
             <img src="/p5-images/p5-random-walker.png" alt="" />
-          </a>
+          </Link>
         </div>
       </article>
     </div>

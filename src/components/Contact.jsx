@@ -1,8 +1,4 @@
-import {
-  AiFillTwitterSquare,
-  AiOutlineInstagram,
-  AiOutlineLinkedin,
-} from 'react-icons/ai';
+import { RxInstagramLogo, RxLinkedinLogo, RxTwitterLogo } from 'react-icons/rx';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import FormSuccess from './FormSuccess';
@@ -126,21 +122,21 @@ export const Contact = ({ contactSection }) => {
                   href="https://www.linkedin.com/in/jamesyuill/"
                   target="_blank"
                 >
-                  <AiOutlineLinkedin size={40} />
+                  <RxLinkedinLogo size={40} />
                 </a>
                 <a
                   className="icon-link"
                   href="http://www.instagram.com/reanimatedgif"
                   target="_blank"
                 >
-                  <AiOutlineInstagram size={40} />
+                  <RxInstagramLogo size={40} />
                 </a>
                 <a
                   className="icon-link"
                   href="http://www.twitter.com/jamesyuill"
                   target="_blank"
                 >
-                  <AiFillTwitterSquare size={40} />
+                  <RxTwitterLogo size={35} />
                 </a>
               </div>
             </div>
