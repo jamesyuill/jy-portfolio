@@ -57,12 +57,8 @@ export default function GuessWhat() {
         </div>
         <div className="project-tech-stack">
           <ul>
-            {techStack.map((item, i) => {
-              return techStack[i + 1] ? (
-                <li key={item}>{item} | </li>
-              ) : (
-                <li key={item}>{item}</li>
-              );
+            {techStack.map((item) => {
+              return <li key={item}>{item}</li>;
             })}
           </ul>
         </div>

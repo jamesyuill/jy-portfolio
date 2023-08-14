@@ -1,5 +1,5 @@
-import App from '../PGSites/hover-over/App';
+import React from 'react';
 
 export default function TestPage() {
-  return <App />;
+  return <div>TestPage</div>;
 }

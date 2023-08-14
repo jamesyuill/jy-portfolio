@@ -14,15 +14,15 @@ export function Model(props) {
   const { nodes, materials } = useGLTF('/monkey.glb');
   const monkeyMesh = useRef();
 
-  // useEffect(() => {
-  //   gsap.to(monkeyMesh.current.rotation, {
-  //     y: 4,
+  useEffect(() => {
+    gsap.to(monkeyMesh.current.rotation, {
+      y: 6,
 
-  //     scrollTrigger: {
-  //       scrub: true,
-  //     },
-  //   });
-  // }, []);
+      scrollTrigger: {
+        scrub: true,
+      },
+    });
+  }, []);
 
   return (
     <group
@@ -30,7 +30,7 @@ export function Model(props) {
       dispose={null}
       scale={2}
       rotation={[0, 0, 0]}
-      position={[2.5, 0, 0]}
+      position={[0, 0, 0]}
     >
       <mesh
         ref={monkeyMesh}

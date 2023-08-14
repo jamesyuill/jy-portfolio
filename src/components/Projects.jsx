@@ -16,37 +16,39 @@ export const Projects = ({ projectsSection }) => {
   };
 
   return (
-    <div className="projects" ref={projectsSection}>
-      <h2>PROJECTS</h2>
-      <div className="long-line-div"></div>
-      <nav className="projects-nav">
-        <Link
-          className="projects-nav-link"
-          onClick={() => {
-            setDisplayProject(1);
-          }}
-        >
-          Guess What?!
-        </Link>
-        |
-        <Link
-          className="projects-nav-link"
-          onClick={() => {
-            setDisplayProject(2);
-          }}
-        >
-          JY News App
-        </Link>
-        |
-        <Link
-          className="projects-nav-link"
-          onClick={() => {
-            setDisplayProject(3);
-          }}
-        >
-          Pokemon Battle App
-        </Link>
-        {/* <Link
+    <>
+      <div className="spacer" ref={projectsSection}></div>
+      <div className="projects">
+        <h2>PROJECTS</h2>
+        <div className="long-line-div"></div>
+        <nav className="projects-nav">
+          <Link
+            className="projects-nav-link"
+            onClick={() => {
+              setDisplayProject(1);
+            }}
+          >
+            Guess What?!
+          </Link>
+          |
+          <Link
+            className="projects-nav-link"
+            onClick={() => {
+              setDisplayProject(2);
+            }}
+          >
+            JY News App
+          </Link>
+          |
+          <Link
+            className="projects-nav-link"
+            onClick={() => {
+              setDisplayProject(3);
+            }}
+          >
+            Pokemon Battle App
+          </Link>
+          {/* <Link
           className="projects-nav-link"
           onClick={() => {
             setDisplayProject(4);
@@ -54,8 +56,9 @@ export const Projects = ({ projectsSection }) => {
         >
           Cable TV Website
         </Link> */}
-      </nav>
-      <main>{projectsList[displayProject]}</main>
-    </div>
+        </nav>
+        <main>{projectsList[displayProject]}</main>
+      </div>
+    </>
   );
 };

@@ -18,8 +18,8 @@ function Home() {
   const contactSection = useRef(null);
   const playgroundSection = useRef(null);
   return (
-    <>
-      <div className="main">
+    <main>
+      <div className="main-html">
         <Header
           welcomeHome={welcomeHome}
           technicalSkills={technicalSkills}
@@ -60,7 +60,7 @@ function Home() {
           </Suspense>
         </Canvas>
       </div>
-    </>
+    </main>
   );
 }
 

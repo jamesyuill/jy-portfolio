@@ -1,3 +1,4 @@
+import { MobileNav } from './MobileNav';
 import { Nav } from './Nav';
 
 export const Header = ({
@@ -8,12 +9,29 @@ export const Header = ({
   playgroundSection,
 }) => {
   return (
-    <Nav
-      welcomeHome={welcomeHome}
-      technicalSkills={technicalSkills}
-      projectsSection={projectsSection}
-      contactSection={contactSection}
-      playgroundSection={playgroundSection}
-    />
+    <>
+      <header>
+        <h1>
+          <span className="spanpink">James Yuill</span>
+        </h1>
+        <h2>
+          <span className="spanpink">Full Stack Developer</span>
+        </h2>
+      </header>
+      <Nav
+        welcomeHome={welcomeHome}
+        technicalSkills={technicalSkills}
+        projectsSection={projectsSection}
+        contactSection={contactSection}
+        playgroundSection={playgroundSection}
+      />
+      <MobileNav
+        welcomeHome={welcomeHome}
+        technicalSkills={technicalSkills}
+        projectsSection={projectsSection}
+        contactSection={contactSection}
+        playgroundSection={playgroundSection}
+      />
+    </>
   );
 };

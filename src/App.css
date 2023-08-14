@@ -11,7 +11,7 @@
   padding: 0;
 }
 
-.main {
+.main-html {
   position: absolute;
   top: 0;
   display: flex;
@@ -30,8 +30,8 @@
 
 .nav-menu {
   position: fixed;
-  top: 1rem;
-  right: 3rem;
+  top: 5px;
+  right: 5px;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -40,21 +40,59 @@
   border-radius: 5px;
 }
 
+.mobile-nav-menu {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
 .nav-menu li {
   list-style: none;
   margin-left: 0;
 }
 
 .canvas {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: 1;
 }
 
+header {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 140px;
+  top: 0px;
+  left: 0px;
+
+  background: rgb(255, 255, 255, 10%);
+
+  color: black;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  gap: 0.2rem;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header h2 {
+  font-size: 1.65rem;
+}
+
 .welcome {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   padding-left: 1rem;
-  padding-top: 20%;
+  align-items: center;
+  justify-content: center;
 }
 
 .tech-skills-section {
@@ -82,7 +120,7 @@
   flex-wrap: wrap;
 
   justify-items: left;
-  width: 60%;
+  width: 80%;
   margin-top: 1rem;
   gap: 1rem;
 }
@@ -123,8 +161,7 @@
 .project-card-article {
   display: flex;
   flex-direction: column;
-  width: 7cqb;
-  min-width: 700px;
+
   height: fit-content;
   margin-top: 1rem;
 }
@@ -134,6 +171,7 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 2rem;
+  width: 70%;
   background-color: rgba(228, 248, 255, 60%);
   border: 1px solid black;
   border-radius: 5px;
@@ -151,14 +189,16 @@
 
 .projects-nav {
   display: inline-flex;
-  font-size: 1.2rem;
+  font-size: 1rem;
   gap: 0.5rem;
-  padding: 2rem;
+  padding: 1rem;
   margin-top: 1rem;
+
+  width: 73.5%;
   background-color: rgba(228, 248, 255, 60%);
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 5px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .projects-nav-link:hover {
@@ -167,9 +207,10 @@
 }
 
 .project-tech-stack ul {
-  display: inline-flex;
-  justify-content: left;
+  display: flex;
+  justify-content: space-evenly;
   gap: 0.5rem;
+  font-size: 0.8rem;
   list-style: none;
   margin-top: 1rem;
   border: 1px solid black;
@@ -191,6 +232,8 @@
 }
 .github-link {
   display: flex;
+  justify-content: space-evenly;
+
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -250,15 +293,16 @@
 
   border: 2px solid black;
   padding: 1rem;
-  min-width: 10rem;
-  width: auto;
+
+  width: 60%;
   border-radius: 5px;
   background-color: rgba(228, 248, 255, 60%);
 }
 
 .icons {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -271,7 +315,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-items: left;
-  width: 70%;
+  width: 75%;
   margin-top: 1rem;
   gap: 1rem;
 }
@@ -318,7 +362,8 @@
 }
 
 .welcome h1 {
-  font-size: 8rem;
+  font-size: 15rem;
+  color: hotpink;
 }
 
 .welcome h2 {
@@ -333,6 +378,7 @@ h2 {
 h3 {
   font-size: 1rem;
   display: inline;
+  text-align: center;
   background-color: hotpink;
   padding: 0.5rem;
   border-radius: 5px;
@@ -356,6 +402,7 @@ a {
   display: inline;
   background-color: hotpink;
   padding: 0.5rem;
+  font-size: 0.8rem;
   border-radius: 5px;
 }
 
@@ -369,4 +416,278 @@ a {
 .link:hover {
   background-color: hotpink;
   cursor: pointer;
+}
+
+.spacer {
+  min-height: 85px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  main {
+    display: flex;
+    width: 100vw;
+    height: 2000px;
+  }
+
+  .main-html {
+    width: 100vw;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .canvas {
+    z-index: 1;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: 1px solid black;
+  }
+
+  @keyframes slideIn {
+    from {
+      right: -150px;
+      opacity: 0;
+    }
+    to {
+      right: 0px;
+      opacity: 1;
+    }
+  }
+
+  .mobile-nav-menu {
+    display: flex;
+    position: fixed;
+    top: 40px;
+    right: 0px;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    z-index: 1;
+    animation: slideIn 0.5s;
+  }
+
+  .mobile-nav-menu li {
+    list-style: none;
+    margin-left: 0;
+  }
+
+  header {
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45px;
+    top: 0px;
+    left: 0px;
+    background: rgb(255, 255, 255, 10%);
+    color: black;
+    padding: 0.3rem;
+    padding-left: 1rem;
+    gap: 0.2rem;
+    justify-content: center;
+  }
+
+  header h1 {
+    font-size: 1rem;
+  }
+
+  header h2 {
+    font-size: 0.557rem;
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 1rem;
+    align-items: left;
+    justify-content: center;
+  }
+
+  .tech-skills-section {
+    height: 100vh;
+    padding-left: 1rem;
+  }
+
+  .projects {
+    height: 150vh;
+    padding-left: 1rem;
+  }
+
+  .contact {
+    height: 100vh;
+    padding-left: 1rem;
+  }
+
+  .playground {
+    height: 100vh;
+    padding-left: 1rem;
+  }
+
+  .projects-nav {
+    display: flex;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 90%;
+    font-size: 0.8rem;
+    background-color: rgba(228, 248, 255, 60%);
+    border: 2px solid black;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .project-card-article {
+    margin-top: 1rem;
+  }
+
+  .project-card-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 87%;
+    padding: 0.5rem;
+    background-color: rgba(228, 248, 255, 60%);
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .playground-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: left;
+    width: 85%;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .playground-card {
+    padding: 0.7rem;
+    background-color: rgba(228, 248, 255, 60%);
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .playground-card img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .tech-skill-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(228, 248, 255, 60%);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 0.7rem;
+  }
+
+  .spacer {
+    min-height: 50px;
+  }
+
+  .welcome h1 {
+    font-size: 6rem;
+  }
+
+  .welcome h2 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.7rem;
+  }
+
+  .link {
+    cursor: pointer;
+  }
+  .p-link {
+    display: block;
+    background-color: hotpink;
+    padding: 0.2rem;
+    border-radius: 5px;
+  }
+
+  .p-link:hover {
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+
+  .link:hover {
+    background-color: hotpink;
+    cursor: pointer;
+  }
+
+  .project-tech-stack ul {
+    display: flex;
+    justify-content: left;
+    gap: 0.3rem;
+    font-size: 0.6rem;
+    list-style: none;
+    margin-top: 1rem;
+    border: 1px solid black;
+    background-color: rgba(228, 248, 255, 40%);
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .contact-and-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-form {
+    width: 85%;
+  }
+
+  .socials {
+    width: 85%;
+  }
+
+  .icons {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .long-line-div {
+    border: 2px solid black;
+    width: 93%;
+  }
 }

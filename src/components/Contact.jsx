@@ -61,7 +61,8 @@ export const Contact = ({ contactSection }) => {
 
   return (
     <>
-      <div className="contact" ref={contactSection}>
+      <div className="spacer" ref={contactSection}></div>
+      <div className="contact">
         <h2>CONTACT</h2>
         <div className="long-line-div"></div>
         <div className="contact-and-socials">
@@ -115,7 +116,6 @@ export const Contact = ({ contactSection }) => {
           </div>
           <div className="socials-wrapper">
             <div className="socials">
-              <p>SOCIALS</p>
               <div className="icons">
                 <a
                   className="icon-link"
