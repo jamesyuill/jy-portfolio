@@ -14,10 +14,18 @@ export default function Box({ setName, hovered, hover }) {
   // useFrame(() => {
   //   boxMesh.current.rotation.z = window.scrollY / 200;
   // })
+  const tl = gsap.timeline();
 
   useEffect(() => {
+    tl.to(boxMesh.current.position, {
+      z: 5,
+
+      scrollTrigger: {
+        scrub: true,
+      },
+    });
     gsap.to(boxMesh.current.rotation, {
-      y: 3,
+      y: 4,
 
       scrollTrigger: {
         scrub: true,
@@ -30,7 +38,7 @@ export default function Box({ setName, hovered, hover }) {
       ref={boxMesh}
       scale={2}
       rotation={[0, 0, 0]}
-      position={[2, 0, 0]}
+      position={[0, 0, -20]}
       onPointerOver={(e) => {
         setName('PINK');
         hover(true);
@@ -41,10 +49,7 @@ export default function Box({ setName, hovered, hover }) {
       }}
     >
       <boxGeometry attach="geometry" args={[2, 2, 2]} />
-      <meshStandardMaterial
-        attach="material"
-        color={hovered ? 'hotpink' : 'white'}
-      />
+      <meshNormalMaterial attach="material" />
     </mesh>
   );
 }

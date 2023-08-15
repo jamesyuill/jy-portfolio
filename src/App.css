@@ -148,6 +148,7 @@ header h2 {
   background-color: rgba(228, 248, 255, 60%);
   border: 1px solid black;
   border-radius: 5px;
+  font-size: 0.8rem;
 }
 
 .tech-skill-card img {
@@ -230,7 +231,20 @@ header h2 {
 }
 
 .description {
-  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  width: 100%;
+  background-color: rgba(228, 248, 255, 40%);
+
+  border-radius: 5px;
+  padding-bottom: 1rem;
+}
+
+.description p {
+  margin-top: 0;
+  padding: 0.1rem;
 }
 
 .image-div {
@@ -363,6 +377,7 @@ header h2 {
 
 .spanpink {
   background-color: hotpink;
+  padding: 0 0.5rem;
 }
 
 .welcome h1 {

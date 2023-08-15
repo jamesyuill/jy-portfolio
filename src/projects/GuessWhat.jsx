@@ -23,15 +23,14 @@ export default function GuessWhat() {
           </a>
         </div>
         <div className="desc">
-          <div className="description" style={{ whitespace: 'pre-line' }}>
+          <div className="description">
             <br />
 
             <p>
-              - Developed by a team of 6 trainee Developers for the Northcoders
-              final project.
+              - Created a full stack gaming app, in 10 days with 5 other
+              developers.
             </p>
-            <p>- Completed in ten days.</p>
-            <p> - For this project we used Next.js for the front end.</p>
+            <p>- To learn more about the app visit the github links below.</p>
           </div>
         </div>
         <div className="github-link">

@@ -1,4 +1,4 @@
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useThree } from '@react-three/fiber';
 // import { OrbitControls } from '@react-three/drei';
 import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { Welcome } from '../components/Welcome';
@@ -12,6 +12,7 @@ import { Header } from '../components/Header';
 import { Environment, Float } from '@react-three/drei';
 import Loading from '../components/Loading';
 import backgroundImage from '/old_room_4k.hdr';
+import Box from '../components/Box';
 
 function Home() {
   const welcomeHome = useRef(null);
@@ -21,7 +22,6 @@ function Home() {
   const playgroundSection = useRef(null);
 
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
@@ -71,6 +71,7 @@ function Home() {
 
                 <Float>
                   <Model />
+                  <Box />
                 </Float>
               </Suspense>
             </Canvas>

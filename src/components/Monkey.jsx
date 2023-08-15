@@ -13,11 +13,25 @@ gsap.registerPlugin(ScrollTrigger);
 export function Model(props) {
   const { nodes, materials } = useGLTF('/monkey.glb');
   const monkeyMesh = useRef();
-
+  const tl = gsap.timeline();
   useEffect(() => {
-    gsap.to(monkeyMesh.current.rotation, {
-      y: -Math.PI,
+    tl.to(monkeyMesh.current.rotation, {
+      y: 7,
 
+      scrollTrigger: {
+        scrub: true,
+      },
+    });
+    tl.to(monkeyMesh.current.position, {
+      z: 7,
+
+      scrollTrigger: {
+        scrub: true,
+      },
+    });
+    tl.to(monkeyMesh.current.position, {
+      y: 7,
+      delay: 1,
       scrollTrigger: {
         scrub: true,
       },
