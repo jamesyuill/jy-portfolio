@@ -80,12 +80,6 @@ export const Playground = ({ playgroundSection }) => {
               <img src="/p5-images/p5-random-walker.png" alt="" />
             </a>
           </div>
-
-          <div className="playground-card">
-            <Link to="/testpage">
-              <img src="/p5-images/p5-random-walker.png" alt="" />
-            </Link>
-          </div>
         </article>
       </div>
     </>

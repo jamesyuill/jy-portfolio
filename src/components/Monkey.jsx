@@ -16,7 +16,7 @@ export function Model(props) {
 
   useEffect(() => {
     gsap.to(monkeyMesh.current.rotation, {
-      y: 6,
+      y: -Math.PI,
 
       scrollTrigger: {
         scrub: true,
