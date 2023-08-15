@@ -14,7 +14,7 @@ export const Contact = ({ contactSection }) => {
     emailaddress: '',
     message: '',
   });
-  emailjs.init('RMTyNNzRXg99eLPWT');
+  emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
   const responseObj = {
     0: '',
@@ -27,10 +27,10 @@ export const Contact = ({ contactSection }) => {
 
     emailjs
       .sendForm(
-        'service_101pd7k',
-        'template_v62otln',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        'RMTyNNzRXg99eLPWT'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
