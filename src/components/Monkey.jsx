@@ -23,7 +23,7 @@ export function Model(props) {
       },
     });
     tl.to(monkeyMesh.current.position, {
-      z: 7,
+      z: 8,
 
       scrollTrigger: {
         scrub: 1,

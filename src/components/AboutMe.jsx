@@ -1,25 +1,4 @@
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
-gsap.registerPlugin(ScrollTrigger);
-
 export default function AboutMe({ aboutMe }) {
-  const image = useRef(null);
-  const tl = gsap.timeline();
-
-  useEffect(() => {
-    tl.to('.about-me-image', {
-      x: 600,
-
-      scrollTrigger: {
-        trigger: '.about-me-image',
-        start: '20px 80%',
-        end: 'top 30%',
-        scrub: 1,
-      },
-    });
-  }, []);
-
   return (
     <>
       <div className="spacer" ref={aboutMe}></div>
@@ -28,7 +7,7 @@ export default function AboutMe({ aboutMe }) {
         <h2>ABOUT ME</h2>
         <div className="long-line-div"></div>
         <article className="about-me-article">
-          <div className="about-me-image" ref={image}>
+          <div className="about-me-image">
             <img className="profile-image" src="/jy-profile-image.jpg" alt="" />
           </div>
           <div className="about-me-card">
