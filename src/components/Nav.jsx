@@ -1,5 +1,6 @@
 export const Nav = ({
   welcomeHome,
+  aboutMe,
   technicalSkills,
   projectsSection,
   contactSection,
@@ -22,6 +23,14 @@ export const Nav = ({
           }}
         >
           HOME
+        </li>
+        <li
+          className="link"
+          onClick={() => {
+            scrollDown(aboutMe);
+          }}
+        >
+          ABOUT ME
         </li>
         <li
           className="link"

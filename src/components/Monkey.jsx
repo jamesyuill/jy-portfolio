@@ -19,21 +19,21 @@ export function Model(props) {
       y: 7,
 
       scrollTrigger: {
-        scrub: true,
+        scrub: 1,
       },
     });
     tl.to(monkeyMesh.current.position, {
       z: 7,
 
       scrollTrigger: {
-        scrub: true,
+        scrub: 1,
       },
     });
     tl.to(monkeyMesh.current.position, {
       y: 7,
       delay: 1,
       scrollTrigger: {
-        scrub: true,
+        scrub: 1,
       },
     });
   }, []);

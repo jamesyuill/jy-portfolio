@@ -5,6 +5,7 @@ import useClickOutside from './useClickOutside';
 
 export const MobileNav = ({
   welcomeHome,
+  aboutMe,
   technicalSkills,
   projectsSection,
   contactSection,
@@ -53,6 +54,15 @@ export const MobileNav = ({
               }}
             >
               HOME
+            </li>
+            <li
+              className="link"
+              onClick={() => {
+                scrollDown(aboutMe);
+                closeMobileMenu();
+              }}
+            >
+              ABOUT ME
             </li>
             <li
               className="link"

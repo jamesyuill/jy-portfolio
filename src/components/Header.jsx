@@ -3,6 +3,7 @@ import { Nav } from './Nav';
 
 export const Header = ({
   welcomeHome,
+  aboutMe,
   technicalSkills,
   projectsSection,
   contactSection,
@@ -20,6 +21,7 @@ export const Header = ({
       </header>
       <Nav
         welcomeHome={welcomeHome}
+        aboutMe={aboutMe}
         technicalSkills={technicalSkills}
         projectsSection={projectsSection}
         contactSection={contactSection}
@@ -27,6 +29,7 @@ export const Header = ({
       />
       <MobileNav
         welcomeHome={welcomeHome}
+        aboutMe={aboutMe}
         technicalSkills={technicalSkills}
         projectsSection={projectsSection}
         contactSection={contactSection}

@@ -13,20 +13,22 @@ import { Environment, Float } from '@react-three/drei';
 import Loading from '../components/Loading';
 import backgroundImage from '/old_room_4k.hdr';
 import Box from '../components/Box';
+import AboutMe from '../components/AboutMe';
 
 function Home() {
   const welcomeHome = useRef(null);
+  const aboutMe = useRef(null);
   const technicalSkills = useRef(null);
   const projectsSection = useRef(null);
   const contactSection = useRef(null);
   const playgroundSection = useRef(null);
 
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3500);
-  }, []);
+  const [isLoading, setIsLoading] = useState(false);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 3500);
+  // }, []);
 
   return (
     <>
@@ -37,6 +39,7 @@ function Home() {
           <div className="main-html">
             <Header
               welcomeHome={welcomeHome}
+              aboutMe={aboutMe}
               technicalSkills={technicalSkills}
               projectsSection={projectsSection}
               contactSection={contactSection}
@@ -44,6 +47,7 @@ function Home() {
             />
 
             <Welcome welcomeHome={welcomeHome} />
+            <AboutMe aboutMe={aboutMe} />
             <TechnicalSkills technicalSkills={technicalSkills} />
             <Projects projectsSection={projectsSection} />
             <Contact contactSection={contactSection} />
@@ -62,9 +66,9 @@ function Home() {
               }}
             >
               {/* <OrbitControls enableZoom={false} /> */}
-              <ambientLight intensity={0.2} />
+              {/* <ambientLight intensity={0.1} /> */}
 
-              <directionalLight position={[-2, 5, 2]} intensity={0.3} />
+              <directionalLight position={[0, 1.3, 1]} intensity={0.3} />
               <Environment preset="warehouse" background blur={0.8} />
               <Suspense fallback={null}>
                 {/* <Box setName={setName} hovered={hovered} hover={hover} /> */}

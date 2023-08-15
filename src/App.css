@@ -4,9 +4,9 @@
   width: 100vw;
   height: 100vh;
 }
-
-/* body {
-  background-color: rgb(155, 155, 155);
+/* 
+body {
+  
 } */
 
 * {
@@ -99,31 +99,77 @@ header h2 {
   justify-content: center;
 }
 
+.about-me {
+  height: 100vh;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .tech-skills-section {
   height: 100vh;
   padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects {
   height: 150vh;
   padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact {
   height: 100vh;
   padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .playground {
   height: 100vh;
   padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-article {
+  display: flex;
+
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.about-me-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 30%;
+  background-color: rgba(228, 248, 255, 60%);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.profile-image {
+  position: relative;
+  left: -600px;
+  width: 300px;
+  border-radius: 50%;
 }
 
 .tech-skills-article {
   display: flex;
   flex-wrap: wrap;
-
-  justify-items: left;
+  justify-content: center;
   width: 80%;
   margin-top: 1rem;
   gap: 1rem;
@@ -166,7 +212,8 @@ header h2 {
 .project-card-article {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  width: 100%;
   height: fit-content;
   margin-top: 1rem;
 }
@@ -174,9 +221,10 @@ header h2 {
 .project-card-div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 0.5rem;
   padding: 1rem;
-  width: 70%;
+  width: 80%;
   background-color: rgba(228, 248, 255, 60%);
   border: 1px solid black;
   border-radius: 5px;
@@ -247,8 +295,6 @@ header h2 {
   padding: 0.1rem;
 }
 
-.image-div {
-}
 .github-link {
   display: flex;
   justify-content: space-evenly;
@@ -332,7 +378,7 @@ header h2 {
 .playground-article {
   display: flex;
   flex-wrap: wrap;
-  justify-items: left;
+  justify-content: center;
   width: 75%;
   margin-top: 1rem;
   gap: 1rem;
@@ -552,24 +598,64 @@ a {
     justify-content: center;
   }
 
+  .about-me-article {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .about-me-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 70%;
+    background-color: rgba(228, 248, 255, 60%);
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+
+  .profile-image {
+    position: relative;
+    left: -700px;
+    width: 300px;
+    border-radius: 50%;
+  }
+
   .tech-skills-section {
     height: 100vh;
     padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .projects {
     height: 150vh;
     padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact {
     height: 100vh;
     padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .playground {
     height: 100vh;
     padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .projects-nav {
@@ -603,7 +689,7 @@ a {
   .playground-article {
     display: flex;
     flex-wrap: wrap;
-    justify-items: left;
+    justify-content: center;
     width: 85%;
     margin-top: 1rem;
     gap: 1rem;

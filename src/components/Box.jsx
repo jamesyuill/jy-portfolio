@@ -21,14 +21,14 @@ export default function Box({ setName, hovered, hover }) {
       z: 5,
 
       scrollTrigger: {
-        scrub: true,
+        scrub: 1,
       },
     });
     gsap.to(boxMesh.current.rotation, {
       y: 4,
 
       scrollTrigger: {
-        scrub: true,
+        scrub: 1,
       },
     });
   }, []);
