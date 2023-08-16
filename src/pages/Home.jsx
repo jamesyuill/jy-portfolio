@@ -30,13 +30,6 @@ function Home() {
   //   }, 3500);
   // }, []);
 
-  useEffect(() => {
-    setTimeout(() => {
-      console.log(canvasRef.current.attributes);
-      console.log(canvasRef.current.attributes.width.value);
-    }, 2000);
-  }, []);
-
   return (
     <>
       {isLoading ? (
@@ -80,7 +73,7 @@ function Home() {
               <Environment preset="warehouse" background blur={0.8} />
               <Suspense fallback={null}>
                 <Float>
-                  <Model />
+                  {/* <Model /> */}
                   <Box />
                 </Float>
               </Suspense>

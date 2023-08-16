@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 
-export default function Box({ setName, hovered, hover }) {
+export default function Box() {
   const boxMesh = React.useRef();
   gsap.registerPlugin(ScrollTrigger);
   // useFrame(({ clock }) => {
@@ -37,16 +37,10 @@ export default function Box({ setName, hovered, hover }) {
     <mesh
       ref={boxMesh}
       scale={2}
-      rotation={[0, 0, 0]}
-      position={[0, 0, -20]}
-      onPointerOver={(e) => {
-        setName('PINK');
-        hover(true);
-      }}
-      onPointerOut={(e) => {
-        hover(false);
-        setName('WHITE');
-      }}
+      rotation={[0, 1, 0]}
+      position={[0, 1, -20]}
+      onPointerOver={(e) => {}}
+      onPointerOut={(e) => {}}
     >
       <boxGeometry attach="geometry" args={[2, 2, 2]} />
       <meshNormalMaterial attach="material" />

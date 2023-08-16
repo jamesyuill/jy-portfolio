@@ -4,6 +4,7 @@ import PokemonBattle from '../projects/PokemonBattle';
 import { useState } from 'react';
 import CableTvSite from '../projects/CableTvSite';
 import GuessWhat from '../projects/GuessWhat';
+import ProjectsNavBar from './ProjectsNavBar';
 
 export const Projects = ({ projectsSection }) => {
   const [displayProject, setDisplayProject] = useState(1);
@@ -21,43 +22,12 @@ export const Projects = ({ projectsSection }) => {
       <div className="projects">
         <h2>PROJECTS</h2>
         <div className="long-line-div"></div>
-        <nav className="projects-nav">
-          <Link
-            className="projects-nav-link"
-            onClick={() => {
-              setDisplayProject(1);
-            }}
-          >
-            Guess What?!
-          </Link>
-          |
-          <Link
-            className="projects-nav-link"
-            onClick={() => {
-              setDisplayProject(2);
-            }}
-          >
-            JY News App
-          </Link>
-          |
-          <Link
-            className="projects-nav-link"
-            onClick={() => {
-              setDisplayProject(3);
-            }}
-          >
-            Pokemon Battle App
-          </Link>
-          |
-          <Link
-            className="projects-nav-link"
-            onClick={() => {
-              setDisplayProject(4);
-            }}
-          >
-            Cable TV Website
-          </Link>
-        </nav>
+
+        <ProjectsNavBar
+          displayProject={displayProject}
+          setDisplayProject={setDisplayProject}
+        />
+
         <main>{projectsList[displayProject]}</main>
       </div>
     </>
