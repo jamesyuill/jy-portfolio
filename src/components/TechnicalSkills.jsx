@@ -13,7 +13,9 @@ export const TechnicalSkills = ({ technicalSkills }) => {
               target="_blank"
             >
               <div className="tech-skill-card">
-                <img src="images/javascript.png" alt="Javascript logo" />
+                <div className="tech-and-image">
+                  <img src="images/javascript.png" alt="Javascript logo" />
+                </div>
                 <p>JavaScript</p>
               </div>
             </a>
@@ -21,7 +23,9 @@ export const TechnicalSkills = ({ technicalSkills }) => {
 
           <a href="https://react.dev/" target="_blank">
             <div className="tech-skill-card">
-              <img src="images/react.png" alt="React logo" />
+              <div className="tech-and-image">
+                <img src="images/react.png" alt="React logo" />
+              </div>
               <p>React</p>
             </div>
           </a>
@@ -31,7 +35,9 @@ export const TechnicalSkills = ({ technicalSkills }) => {
             target="_blank"
           >
             <div className="tech-skill-card">
-              <img src="images/html5.png" alt="HTML5 logo" />
+              <div className="tech-and-image">
+                <img src="images/html5.png" alt="HTML5 logo" />
+              </div>
               <p>HTML5</p>
             </div>
           </a>
@@ -41,19 +47,25 @@ export const TechnicalSkills = ({ technicalSkills }) => {
             target="_blank"
           >
             <div className="tech-skill-card">
-              <img src="images/css.png" alt="CSS logo" />
+              <div className="tech-and-image">
+                <img src="images/css.png" alt="CSS logo" />
+              </div>
               <p>CSS</p>
             </div>
           </a>
           <a href="https://nodejs.org/en/docs" target="_blank">
             <div className="tech-skill-card">
-              <img src="images/nodejs.png" alt="Node.js logo" />
+              <div className="tech-and-image">
+                <img src="images/nodejs.png" alt="Node.js logo" />
+              </div>
               <p>Node.js</p>
             </div>
           </a>
           <a href="https://expressjs.com/" target="_blank">
             <div className="tech-skill-card">
-              <img src="images/express.png" alt="Express.js logo" />
+              <div className="tech-and-image">
+                <img src="images/express.png" alt="Express.js logo" />
+              </div>
               <p>Express.js</p>
             </div>
           </a>
@@ -62,44 +74,58 @@ export const TechnicalSkills = ({ technicalSkills }) => {
             target="_blank"
           >
             <div className="tech-skill-card">
-              <img src="images/sql.png" alt="sql logo" />
+              <div className="tech-and-image">
+                <img src="images/sql.png" alt="sql logo" />
+              </div>
               <p>SQL</p>
             </div>
           </a>
           <a href="https://www.postgresql.org/docs/" target="_blank">
             <div className="tech-skill-card">
-              <img src="images/postgresql.png" alt="Postgresql logo" />
+              <div className="tech-and-image">
+                <img src="images/postgresql.png" alt="Postgresql logo" />
+              </div>
               <p>PostgreSQL</p>
             </div>
           </a>
           <a href="https://jestjs.io/" target="_blank">
             <div className="tech-skill-card">
-              <img src="images/jest.png" alt="Jest logo" />
+              <div className="tech-and-image">
+                <img src="images/jest.png" alt="Jest logo" />
+              </div>
               <p>Jest</p>
             </div>
           </a>
 
           <a href="https://www.ableton.com/en/" target="_blank">
             <div className="tech-skill-card">
-              <img src="images/abletonlive.png" alt="Ableton Live logo" />
+              <div className="tech-and-image">
+                <img src="images/abletonlive.png" alt="Ableton Live logo" />
+              </div>
               <p>Ableton Live</p>
             </div>
           </a>
           <a href="https://www.avid.com/pro-tools" target="_blank">
             <div className="tech-skill-card">
-              <img src="images/protools.png" alt="Pro Tools logo" />
+              <div className="tech-and-image">
+                <img src="images/protools.png" alt="Pro Tools logo" />
+              </div>
               <p>Pro Tools</p>
             </div>
           </a>
           <a href="https://threejs.org/" target="_blank">
             <div className="tech-skill-card">
-              <img src="images/three.png" alt="Three.js logo" />
+              <div className="tech-and-image">
+                <img src="images/three.png" alt="Three.js logo" />
+              </div>
               <p>Three.js</p>
             </div>
           </a>
           <a href="https://www.blender.org/" target="_blank">
             <div className="tech-skill-card">
-              <img src="images/blender.png" alt="Blender logo" />
+              <div className="tech-and-image">
+                <img src="images/blender.png" alt="Blender logo" />
+              </div>
               <p>Blender</p>
             </div>
           </a>
@@ -108,7 +134,9 @@ export const TechnicalSkills = ({ technicalSkills }) => {
             target="_blank"
           >
             <div className="tech-skill-card">
-              <img src="images/touchdesigner.png" alt="TouchDesigner logo" />
+              <div className="tech-and-image">
+                <img src="images/touchdesigner.png" alt="TouchDesigner logo" />
+              </div>
               <p>Touchdesigner</p>
             </div>
           </a>

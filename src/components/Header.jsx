@@ -12,12 +12,10 @@ export const Header = ({
   return (
     <>
       <header>
-        <h1>
-          <span className="spanpink">James Yuill</span>
-        </h1>
-        <h2>
-          <span className="spanpink">Full Stack Developer</span>
-        </h2>
+        <div className="header-name">
+          <h1>James Yuill</h1>
+          <h2>Full Stack Developer</h2>
+        </div>
       </header>
       <Nav
         welcomeHome={welcomeHome}
