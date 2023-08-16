@@ -34,6 +34,9 @@ export default function PokemonBattle() {
           >
             <p className="p-link">View the Github</p>
           </a>
+          <a href="https://pokemon-battle-app.netlify.app/" target="_blank">
+            <p className="p-link">Deployed Site</p>
+          </a>
         </div>
         <div className="project-tech-stack">
           <ul>

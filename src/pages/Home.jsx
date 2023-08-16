@@ -11,7 +11,6 @@ import { Model } from '../components/Monkey';
 import { Header } from '../components/Header';
 import { Environment, Float } from '@react-three/drei';
 import Loading from '../components/Loading';
-import backgroundImage from '/old_room_4k.hdr';
 import Box from '../components/Box';
 import AboutMe from '../components/AboutMe';
 
@@ -80,8 +79,6 @@ function Home() {
               <directionalLight position={[0, 1.3, 1]} intensity={0.3} />
               <Environment preset="warehouse" background blur={0.8} />
               <Suspense fallback={null}>
-                {/* <Box setName={setName} hovered={hovered} hover={hover} /> */}
-
                 <Float>
                   <Model />
                   <Box />

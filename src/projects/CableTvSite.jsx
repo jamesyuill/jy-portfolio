@@ -4,7 +4,7 @@ export default function CableTvSite() {
   return (
     <article className="project-card-article">
       <div className="project-card-div">
-        <h3>cable tv website</h3>
+        <h3>Cable TV Website</h3>
         <div className="desc-img">
           <div className="description" style={{ whitespace: 'pre-line' }}>
             <br />
