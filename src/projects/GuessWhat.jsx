@@ -15,10 +15,7 @@ export default function GuessWhat() {
         <h3>Northcoders Project: Guess What?!</h3>
 
         <div className="image-div">
-          <a
-            href="https://github.com/jamesyuill/fe-react-data-visualisation/blob/main/src/assets/Final%20Project%20Screenshot.png"
-            target="_blank"
-          >
+          <a href="https://guess-what-gitkermit.netlify.app/" target="_blank">
             <img src="/project-images/guess-what-desktop.png" />
           </a>
         </div>
@@ -35,22 +32,16 @@ export default function GuessWhat() {
         </div>
         <div className="github-link">
           <a
-            href="https://github.com/jamesyuill/fe-react-data-visualisation"
+            href="https://github.com/PabloJulianRial/guess-what-be"
             target="_blank"
           >
             <p className="p-link">BackEnd Github</p>
           </a>
-          <a
-            href="https://github.com/jamesyuill/fe-react-data-visualisation"
-            target="_blank"
-          >
+          <a href="https://github.com/jamesyuill/guess-what-fe" target="_blank">
             <p className="p-link">FrontEnd Github</p>
           </a>
 
-          <a
-            href="https://github.com/jamesyuill/fe-react-data-visualisation"
-            target="_blank"
-          >
+          <a href="https://guess-what-gitkermit.netlify.app/" target="_blank">
             <p className="p-link">Deployed Site</p>
           </a>
         </div>

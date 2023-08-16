@@ -54,20 +54,14 @@ export default function Jynews() {
           </div>
         </div>
         <div className="github-link">
-          <a
-            href="https://github.com/jamesyuill/fe-react-data-visualisation"
-            target="_blank"
-          >
+          <a href="https://github.com/jamesyuill/fe-jy-news" target="_blank">
             <p className="p-link">FrontEnd Github</p>
           </a>
-          <a
-            href="https://github.com/jamesyuill/fe-react-data-visualisation"
-            target="_blank"
-          >
+          <a href="https://github.com/jamesyuill/jy-news" target="_blank">
             <p className="p-link">BackEnd Github</p>
           </a>
           <a
-            href="https://github.com/jamesyuill/fe-react-data-visualisation"
+            href="https://jy-news-fullstack-project.netlify.app/"
             target="_blank"
           >
             <p className="p-link">Deployed Site</p>
