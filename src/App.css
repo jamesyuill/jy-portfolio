@@ -746,16 +746,17 @@ a {
   }
 
   .playground-card img {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
   }
 
   .tech-skill-card {
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    width: 5rem;
-    height: 5rem;
+
+    width: 5.5rem;
+    height: 5.5rem;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(228, 248, 255, 60%);

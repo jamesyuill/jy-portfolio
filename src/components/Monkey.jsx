@@ -23,7 +23,7 @@ export function Model(props) {
       },
     });
     tl.to(monkeyMesh.current.position, {
-      z: 8,
+      z: 9,
 
       scrollTrigger: {
         scrub: 1,
@@ -44,7 +44,7 @@ export function Model(props) {
       dispose={null}
       scale={2}
       rotation={[0, 0, 0]}
-      position={[0, 0, 0]}
+      position={[0, -0.5, 0]}
     >
       <mesh
         ref={monkeyMesh}

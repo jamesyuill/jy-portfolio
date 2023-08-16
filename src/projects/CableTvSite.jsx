@@ -5,7 +5,16 @@ export default function CableTvSite() {
     <article className="project-card-article">
       <div className="project-card-div">
         <h3>Cable TV Website</h3>
-        <div className="desc-img">
+
+        <div className="image-div">
+          <a
+            href="https://github.com/jamesyuill/cabletv-three-site"
+            target="_blank"
+          >
+            <img src="/project-images/cable-tv-website.png" />
+          </a>
+        </div>
+        <div className="desc">
           <div className="description" style={{ whitespace: 'pre-line' }}>
             <br />
 
@@ -15,18 +24,10 @@ export default function CableTvSite() {
               focus between 3d models.
             </p>
           </div>
-          <div className="image-div">
-            <a
-              href="https://github.com/jamesyuill/fe-react-data-visualisation/blob/main/src/assets/Final%20Project%20Screenshot.png"
-              target="_blank"
-            >
-              <img src="/images/pokemon-mini-app-phonedisplay.png" />
-            </a>
-          </div>
         </div>
         <div className="github-link">
           <a
-            href="https://github.com/jamesyuill/fe-react-data-visualisation"
+            href="https://github.com/jamesyuill/cabletv-three-site"
             target="_blank"
           >
             <p className="p-link">View the Github</p>
