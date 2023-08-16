@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/jamesyui/developer.jamesyuill.com/
-    - /bin/cp -r 	/home/jamesyui/repositories/jy-portfolio/* $DEPLOYPATH
+    - /bin/cp -r 	/home/jamesyui/repositories/jy-portfolio/dist/* $DEPLOYPATH
