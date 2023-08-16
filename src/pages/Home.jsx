@@ -1,6 +1,6 @@
 import { Canvas, useThree } from '@react-three/fiber';
 // import { OrbitControls } from '@react-three/drei';
-import React, { Suspense, useEffect, useRef, useState } from 'react';
+import { Suspense, useEffect, useRef, useState } from 'react';
 import { Welcome } from '../components/Welcome';
 import '/src/App.css';
 import { TechnicalSkills } from '../components/TechnicalSkills';
@@ -22,6 +22,7 @@ function Home() {
   const projectsSection = useRef(null);
   const contactSection = useRef(null);
   const playgroundSection = useRef(null);
+  const canvasRef = useRef(null);
 
   const [isLoading, setIsLoading] = useState(false);
   // useEffect(() => {
@@ -29,6 +30,13 @@ function Home() {
   //     setIsLoading(false);
   //   }, 3500);
   // }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      console.log(canvasRef.current.attributes);
+      console.log(canvasRef.current.attributes.width.value);
+    }, 2000);
+  }, []);
 
   return (
     <>
@@ -57,6 +65,7 @@ function Home() {
           <div className="wrapper">
             <Canvas
               className="canvas"
+              ref={canvasRef}
               gl={{ antialias: true }}
               camera={{
                 position: [0, 0, 10],

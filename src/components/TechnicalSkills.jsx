@@ -3,7 +3,7 @@ export const TechnicalSkills = ({ technicalSkills }) => {
     <>
       <div className="spacer" ref={technicalSkills}></div>
       <div className="tech-skills-section">
-        <h2>TECHNICAL SKILLS</h2>
+        <h2>TECH SKILLS</h2>
         <div className="long-line-div"></div>
 
         <article className="tech-skills-article">

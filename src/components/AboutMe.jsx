@@ -19,7 +19,7 @@ export default function AboutMe({ aboutMe }) {
             </p>
             <p>
               After teaching myself visual software Blender and Touchdesigner, I
-              realised that I actually like learning, and more specifically
+              realised that I actually like learning, and more specifically,
               teaching myself new skills. Coding was initially an extension of
               this, working with Javascript libraries P5.js and Three.js really
               inspired me to learn more.
