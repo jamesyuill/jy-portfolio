@@ -13,6 +13,8 @@ import { Environment, Float } from '@react-three/drei';
 import Loading from '../components/Loading';
 import Box from '../components/Box';
 import AboutMe from '../components/AboutMe';
+import Ball from '../components/Ball';
+import Instanced from '../components/Instanced';
 
 function Home() {
   const welcomeHome = useRef(null);
@@ -74,7 +76,9 @@ function Home() {
               <Suspense fallback={null}>
                 <Float>
                   {/* <Model /> */}
-                  <Box />
+                  {/* <Box /> */}
+                  {/* <Ball /> */}
+                  <Instanced />
                 </Float>
               </Suspense>
             </Canvas>
