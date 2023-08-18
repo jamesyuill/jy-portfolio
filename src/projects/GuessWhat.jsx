@@ -27,6 +27,14 @@ export default function GuessWhat() {
               - Created a full stack gaming app, in 10 days with 5 other
               developers.
             </p>
+            <p>
+              - A play on the classic Guess Who, players can select a yes/no
+              question to ask about their opponent's card.
+            </p>
+            <p>
+              - Our MVP was a single player game, but with the use of socket.io
+              we managed to get a two player game working.
+            </p>
             <p>- To learn more about the app visit the github links below.</p>
           </div>
         </div>

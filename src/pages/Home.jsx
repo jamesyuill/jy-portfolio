@@ -1,4 +1,4 @@
-import { Canvas, useThree } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 // import { OrbitControls } from '@react-three/drei';
 import { Suspense, useEffect, useRef, useState } from 'react';
 import { Welcome } from '../components/Welcome';
@@ -7,13 +7,10 @@ import { TechnicalSkills } from '../components/TechnicalSkills';
 import { Projects } from '../components/Projects';
 import { Contact } from '../components/Contact';
 import { Playground } from '../components/Playground';
-import { Model } from '../components/Monkey';
 import { Header } from '../components/Header';
-import { Environment, Float } from '@react-three/drei';
+import { Environment, Float, useProgress } from '@react-three/drei';
 import Loading from '../components/Loading';
-import Box from '../components/Box';
 import AboutMe from '../components/AboutMe';
-import Ball from '../components/Ball';
 import Instanced from '../components/Instanced';
 
 function Home() {
@@ -24,13 +21,12 @@ function Home() {
   const contactSection = useRef(null);
   const playgroundSection = useRef(null);
   const canvasRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const { loaded, progress } = useProgress();
 
-  const [isLoading, setIsLoading] = useState(false);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 3500);
-  // }, []);
+  useEffect(() => {
+    setIsLoading(false);
+  }, [loaded]);
 
   return (
     <>
@@ -74,10 +70,12 @@ function Home() {
               <directionalLight position={[0, 1.3, 1]} intensity={0.3} />
               <Environment preset="warehouse" background blur={0.8} />
               <Suspense fallback={null}>
-                <Float>
-                  {/* <Model /> */}
-                  {/* <Box /> */}
-                  {/* <Ball /> */}
+                <Float
+                  speed={0.3}
+                  rotationIntensity={0.3}
+                  floatIntensity={0.4}
+                  floatingRange={[1, 10]}
+                >
                   <Instanced />
                 </Float>
               </Suspense>

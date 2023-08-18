@@ -160,7 +160,7 @@ header h2 {
   gap: 0.5rem;
   padding: 1rem;
   width: 30%;
-  background-color: rgba(228, 248, 255, 60%);
+  background-color: rgba(228, 248, 255, 80%);
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -196,7 +196,7 @@ header h2 {
   height: 6rem;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(228, 248, 255, 60%);
+  background-color: rgba(228, 248, 255, 80%);
   border: 1px solid black;
   border-radius: 5px;
   /* font-size: 0.8rem; */
@@ -240,7 +240,7 @@ header h2 {
   gap: 0.5rem;
   padding: 1rem;
   width: 70%;
-  background-color: rgba(228, 248, 255, 60%);
+  background-color: rgba(228, 248, 255, 80%);
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -263,7 +263,7 @@ header h2 {
   margin-top: 1rem;
 
   width: 70%;
-  background-color: rgba(228, 248, 255, 60%);
+  background-color: rgba(228, 248, 255, 80%);
   border: 2px solid black;
   border-radius: 5px;
   justify-content: space-evenly;
@@ -359,7 +359,7 @@ header h2 {
 
   width: 30rem;
   border-radius: 5px;
-  background-color: rgba(228, 248, 255, 60%);
+  background-color: rgba(228, 248, 255, 80%);
 }
 
 .contact-form button {
@@ -381,7 +381,7 @@ header h2 {
   padding: 1rem;
 
   border-radius: 5px;
-  background-color: rgba(228, 248, 255, 60%);
+  background-color: rgba(228, 248, 255, 80%);
 }
 
 .icons {
@@ -407,7 +407,7 @@ header h2 {
 
 .playground-card {
   padding: 0.7rem;
-  background-color: rgba(228, 248, 255, 60%);
+  background-color: rgba(228, 248, 255, 80%);
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -444,7 +444,6 @@ header h2 {
 
 .spanpink {
   background-color: hotpink;
-  padding: 0 0.5rem;
 }
 
 .welcome h1 {
@@ -656,7 +655,7 @@ a {
     align-self: center;
     padding: 1rem;
     width: 90%;
-    background-color: rgba(228, 248, 255, 60%);
+    background-color: rgba(228, 248, 255, 80%);
     border: 1px solid black;
     border-radius: 5px;
   }
@@ -721,7 +720,7 @@ a {
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     gap: 0.4rem;
-    background-color: rgba(228, 248, 255, 60%);
+    background-color: rgba(228, 248, 255, 80%);
     border: 2px solid black;
     border-radius: 5px;
     align-items: center;
@@ -739,7 +738,7 @@ a {
     flex-direction: column;
     width: 90%;
     padding: 0.5rem;
-    background-color: rgba(228, 248, 255, 60%);
+    background-color: rgba(228, 248, 255, 80%);
     border: 1px solid black;
     border-radius: 5px;
   }
@@ -755,7 +754,7 @@ a {
 
   .playground-card {
     padding: 0.5rem;
-    background-color: rgba(228, 248, 255, 60%);
+    background-color: rgba(228, 248, 255, 80%);
     border: 1px solid black;
     border-radius: 5px;
   }
@@ -763,6 +762,10 @@ a {
   .playground-card img {
     width: 7.5rem;
     height: 7.5rem;
+  }
+
+  .tech-skills-article {
+    width: 80%;
   }
 
   .tech-skill-card {
@@ -774,7 +777,7 @@ a {
     height: 5.5rem;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(228, 248, 255, 60%);
+    background-color: rgba(228, 248, 255, 80%);
     border: 1px solid black;
     border-radius: 5px;
     font-size: 0.7rem;
@@ -827,7 +830,7 @@ a {
     display: flex;
     justify-content: space-evenly;
     gap: 0.3rem;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     list-style: none;
     margin-top: 1rem;
     border: 1px solid black;

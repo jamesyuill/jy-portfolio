@@ -19,12 +19,12 @@ export default function Instanced() {
     for (let i = 0; i < count; i++) {
       const id = counter++;
       temp.position.set(
-        Math.random() * 20,
+        Math.random() * 30,
         Math.random() * 20,
         Math.random() * 40
       );
       temp.rotation.set(10, Math.random() * 10, Math.random() * 5);
-
+      temp.scale.set(Math.random(), Math.random(), Math.random());
       temp.updateMatrix();
       instancedMeshRef.current.setMatrixAt(id, temp.matrix);
       instancedMeshRef.current.setColorAt(
@@ -55,7 +55,7 @@ export default function Instanced() {
 
   useEffect(() => {
     tl.to(instancedMeshRef.current.position, {
-      z: 3,
+      z: -10,
 
       scrollTrigger: {
         scrub: 1,
@@ -74,7 +74,7 @@ export default function Instanced() {
     <instancedMesh
       ref={instancedMeshRef}
       args={[null, null, count]}
-      position={[-9, -13, -50]}
+      position={[-15, -13, -50]}
     >
       <boxGeometry attach="geometry" />
       <meshStandardMaterial />
