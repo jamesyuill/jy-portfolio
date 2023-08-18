@@ -1,4 +1,9 @@
-import { RxInstagramLogo, RxLinkedinLogo, RxTwitterLogo } from 'react-icons/rx';
+import {
+  RxGithubLogo,
+  RxInstagramLogo,
+  RxLinkedinLogo,
+  RxTwitterLogo,
+} from 'react-icons/rx';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import FormSuccess from './FormSuccess';
@@ -137,6 +142,13 @@ export const Contact = ({ contactSection }) => {
                   target="_blank"
                 >
                   <RxTwitterLogo size={35} />
+                </a>
+                <a
+                  className="icon-link"
+                  href="http://github.com/jamesyuill"
+                  target="_blank"
+                >
+                  <RxGithubLogo size={35} />
                 </a>
               </div>
             </div>
