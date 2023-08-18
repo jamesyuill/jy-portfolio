@@ -23,66 +23,68 @@ function Home() {
   const canvasRef = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
   const { loaded, progress } = useProgress();
-
   useEffect(() => {
-    setIsLoading(false);
+    if (loaded === 1) {
+      setIsLoading(false);
+    }
   }, [loaded]);
 
   return (
     <>
-      {isLoading ? (
-        <Loading />
-      ) : (
-        <main>
-          <div className="main-html">
-            <Header
-              welcomeHome={welcomeHome}
-              aboutMe={aboutMe}
-              technicalSkills={technicalSkills}
-              projectsSection={projectsSection}
-              contactSection={contactSection}
-              playgroundSection={playgroundSection}
-            />
+      {/* {isLoading ? (
+        
+      ) : ( */}
+      {isLoading ? <Loading /> : null}
+      <main>
+        <div className="main-html">
+          <Header
+            welcomeHome={welcomeHome}
+            aboutMe={aboutMe}
+            technicalSkills={technicalSkills}
+            projectsSection={projectsSection}
+            contactSection={contactSection}
+            playgroundSection={playgroundSection}
+          />
 
-            <Welcome welcomeHome={welcomeHome} />
-            <AboutMe aboutMe={aboutMe} />
-            <TechnicalSkills technicalSkills={technicalSkills} />
-            <Projects projectsSection={projectsSection} />
-            <Contact contactSection={contactSection} />
-            <Playground playgroundSection={playgroundSection} />
-          </div>
+          <Welcome welcomeHome={welcomeHome} />
+          <AboutMe aboutMe={aboutMe} />
+          <TechnicalSkills technicalSkills={technicalSkills} />
+          <Projects projectsSection={projectsSection} />
+          <Contact contactSection={contactSection} />
+          <Playground playgroundSection={playgroundSection} />
+        </div>
 
-          <div className="wrapper">
-            <Canvas
-              className="canvas"
-              ref={canvasRef}
-              gl={{ antialias: true }}
-              camera={{
-                position: [0, 0, 10],
-                fov: 50,
-                near: 0.01,
-                far: 1000,
-              }}
-            >
-              {/* <OrbitControls enableZoom={false} /> */}
-              {/* <ambientLight intensity={0.1} /> */}
+        <div className="wrapper">
+          <Canvas
+            className="canvas"
+            ref={canvasRef}
+            gl={{ antialias: true }}
+            camera={{
+              position: [0, 0, 10],
+              fov: 50,
+              near: 0.01,
+              far: 1000,
+            }}
+          >
+            {/* <OrbitControls enableZoom={false} /> */}
+            {/* <ambientLight intensity={0.1} /> */}
 
-              <directionalLight position={[0, 1.3, 1]} intensity={0.3} />
-              <Environment preset="warehouse" background blur={0.8} />
-              <Suspense fallback={null}>
-                <Float
-                  speed={0.3}
-                  rotationIntensity={0.3}
-                  floatIntensity={0.4}
-                  floatingRange={[1, 10]}
-                >
-                  <Instanced />
-                </Float>
-              </Suspense>
-            </Canvas>
-          </div>
-        </main>
-      )}
+            <directionalLight position={[0, 1.3, 1]} intensity={0.3} />
+            <Environment preset="warehouse" background blur={0.8} />
+            <Suspense fallback={null}>
+              <Float
+                speed={0.3}
+                rotationIntensity={0.3}
+                floatIntensity={0.4}
+                floatingRange={[1, 10]}
+              >
+                <Instanced />
+              </Float>
+            </Suspense>
+          </Canvas>
+        </div>
+      </main>
+      {/* )} */}
     </>
   );
 }
