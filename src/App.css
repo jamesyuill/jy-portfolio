@@ -93,7 +93,7 @@ header h1 {
 
 header h2 {
   font-size: 1.65rem;
-  margin-left: 0.3rem;
+  margin-left: -2px;
   background: none;
 }
 
