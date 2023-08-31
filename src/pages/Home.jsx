@@ -12,6 +12,8 @@ import { Environment, Float, useProgress } from '@react-three/drei';
 import Loading from '../components/Loading';
 import AboutMe from '../components/AboutMe';
 import Instanced from '../components/Instanced';
+import { Hello } from '../components/Hello';
+import { Physics, RigidBody } from '@react-three/rapier';
 
 function Home() {
   const welcomeHome = useRef(null);
@@ -21,7 +23,7 @@ function Home() {
   const contactSection = useRef(null);
   const playgroundSection = useRef(null);
   const canvasRef = useRef(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const { loaded, progress } = useProgress();
   useEffect(() => {
     if (loaded === 1) {
@@ -31,9 +33,6 @@ function Home() {
 
   return (
     <>
-      {/* {isLoading ? (
-        
-      ) : ( */}
       {isLoading ? <Loading /> : null}
       <main>
         <div className="main-html">
@@ -69,22 +68,26 @@ function Home() {
             {/* <OrbitControls enableZoom={false} /> */}
             {/* <ambientLight intensity={0.1} /> */}
 
-            <directionalLight position={[0, 1.3, 1]} intensity={0.3} />
+            <directionalLight position={[0, 1.3, 1]} intensity={0.2} />
             <Environment preset="warehouse" background blur={0.8} />
             <Suspense fallback={null}>
-              <Float
-                speed={0.3}
-                rotationIntensity={0.3}
-                floatIntensity={0.4}
-                floatingRange={[1, 10]}
-              >
-                <Instanced />
-              </Float>
+              <Physics gravity={[0, 0, 0]}>
+                <RigidBody colliders="hull">
+                  <Hello />
+                </RigidBody>
+                <Float
+                  speed={0.3}
+                  rotationIntensity={0.3}
+                  floatIntensity={0.4}
+                  floatingRange={[1, 10]}
+                >
+                  <Instanced />
+                </Float>
+              </Physics>
             </Suspense>
           </Canvas>
         </div>
       </main>
-      {/* )} */}
     </>
   );
 }

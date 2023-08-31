@@ -3,6 +3,7 @@ import { BoxGeometry, Color, Matrix4, Mesh, Object3D } from 'three';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useFrame } from '@react-three/fiber';
+import { InstancedRigidBodies } from '@react-three/rapier';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Instanced() {
@@ -12,8 +13,6 @@ export default function Instanced() {
   const tl = gsap.timeline();
   let temp = new Object3D();
   let counter = 0;
-  const pos = 10;
-  const neg = -10;
 
   useEffect(() => {
     for (let i = 0; i < count; i++) {
@@ -71,13 +70,15 @@ export default function Instanced() {
   }, []);
 
   return (
-    <instancedMesh
-      ref={instancedMeshRef}
-      args={[null, null, count]}
-      position={[-15, -13, -50]}
-    >
-      <boxGeometry attach="geometry" />
-      <meshStandardMaterial />
-    </instancedMesh>
+    <InstancedRigidBodies ref={instancedMeshRef} colliders="hull">
+      <instancedMesh
+        ref={instancedMeshRef}
+        args={[null, null, count]}
+        position={[-15, -13, -50]}
+      >
+        <boxGeometry attach="geometry" />
+        <meshStandardMaterial />
+      </instancedMesh>
+    </InstancedRigidBodies>
   );
 }
