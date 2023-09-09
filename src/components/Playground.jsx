@@ -80,6 +80,14 @@ export const Playground = ({ playgroundSection }) => {
               <img src="/p5-images/p5-random-walker.png" alt="" />
             </a>
           </div>
+          <div className="playground-card">
+            <a
+              href="https://editor.p5js.org/jamesyuill/full/qtrULMWBb"
+              target="_blank"
+            >
+              <img src="/p5-images/p5-switch-case.png" alt="" />
+            </a>
+          </div>
         </article>
       </div>
     </>

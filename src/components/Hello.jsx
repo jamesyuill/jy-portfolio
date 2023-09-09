@@ -19,7 +19,7 @@ export function Hello(props) {
       },
     });
     tl.to(helloMesh.current.position, {
-      y: 40,
+      y: 50,
 
       scrollTrigger: {
         scrub: 1,
