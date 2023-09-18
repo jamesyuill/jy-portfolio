@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
 
-export default function ProjectsNavBar({ displayProject, setDisplayProject }) {
+export default function ProjectsNavBar({
+  projectsList,
+  displayProject,
+  setDisplayProject,
+}) {
   return (
     <nav className="projects-nav">
       <Link
@@ -13,7 +17,7 @@ export default function ProjectsNavBar({ displayProject, setDisplayProject }) {
           setDisplayProject(1);
         }}
       >
-        Guess What?!
+        What Carb?
       </Link>
       |
       <Link
@@ -26,7 +30,7 @@ export default function ProjectsNavBar({ displayProject, setDisplayProject }) {
           setDisplayProject(2);
         }}
       >
-        JY News App
+        Guess What?!
       </Link>
       |
       <Link
@@ -39,7 +43,7 @@ export default function ProjectsNavBar({ displayProject, setDisplayProject }) {
           setDisplayProject(3);
         }}
       >
-        Pokemon Battle App
+        JY News App
       </Link>
       |
       <Link
@@ -50,6 +54,19 @@ export default function ProjectsNavBar({ displayProject, setDisplayProject }) {
         }
         onClick={() => {
           setDisplayProject(4);
+        }}
+      >
+        Pokemon Battle App
+      </Link>
+      |
+      <Link
+        className={
+          displayProject === 5
+            ? 'projects-nav-link-active'
+            : 'projects-nav-link'
+        }
+        onClick={() => {
+          setDisplayProject(5);
         }}
       >
         Cable TV Website

@@ -88,6 +88,14 @@ export const TechnicalSkills = ({ technicalSkills }) => {
               <p>PostgreSQL</p>
             </div>
           </a>
+          <a href="https://www.mongodb.com/docs/" target="_blank">
+            <div className="tech-skill-card">
+              <div className="tech-and-image">
+                <img src="images/mongodb.png" alt="MongoDB logo" />
+              </div>
+              <p>MongoDB</p>
+            </div>
+          </a>
           <a href="https://jestjs.io/" target="_blank">
             <div className="tech-skill-card">
               <div className="tech-and-image">

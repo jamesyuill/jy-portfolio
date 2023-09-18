@@ -31,7 +31,7 @@ export function Hello(props) {
     if (windowWidth < 400) {
       setSize(2);
     } else {
-      setSize(6);
+      setSize(5);
     }
   }, [windowWidth]);
 

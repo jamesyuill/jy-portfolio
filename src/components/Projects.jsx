@@ -5,15 +5,17 @@ import { useState } from 'react';
 import CableTvSite from '../projects/CableTvSite';
 import GuessWhat from '../projects/GuessWhat';
 import ProjectsNavBar from './ProjectsNavBar';
+import WhatCarb from '../projects/WhatCarb';
 
 export const Projects = ({ projectsSection }) => {
   const [displayProject, setDisplayProject] = useState(1);
 
   const projectsList = {
-    1: <GuessWhat />,
-    2: <Jynews />,
-    3: <PokemonBattle />,
-    4: <CableTvSite />,
+    1: <WhatCarb />,
+    2: <GuessWhat />,
+    3: <Jynews />,
+    4: <PokemonBattle />,
+    5: <CableTvSite />,
   };
 
   return (
@@ -24,6 +26,7 @@ export const Projects = ({ projectsSection }) => {
         <div className="long-line-div"></div>
 
         <ProjectsNavBar
+          projectsList={projectsList}
           displayProject={displayProject}
           setDisplayProject={setDisplayProject}
         />
