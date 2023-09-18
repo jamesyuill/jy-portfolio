@@ -31,7 +31,10 @@ export default function WhatCarb() {
           <a href="https://github.com/jamesyuill/what-carb-be" target="_blank">
             <p className="p-link">BackEnd Github</p>
           </a>
-          <a href="https://github.com/jamesyuill/what-carb-fe" target="_blank">
+          <a
+            href="https://github.com/jamesyuill/what-carb-react"
+            target="_blank"
+          >
             <p className="p-link">FrontEnd Github</p>
           </a>
 
