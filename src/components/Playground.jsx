@@ -1,6 +1,3 @@
-import { Link, Route, Routes } from 'react-router-dom';
-import TestPage from '../pages/TestPage';
-
 export const Playground = ({ playgroundSection }) => {
   return (
     <>
