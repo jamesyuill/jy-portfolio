@@ -12,6 +12,15 @@ export const Playground = ({ playgroundSection }) => {
         <article className="playground-article">
           <div className="playground-card">
             <a
+              href="https://editor.p5js.org/jamesyuill/full/jMLFOIYwE"
+              target="_blank"
+            >
+              <img src="/p5-images/p5-spiral.png" alt="" />
+            </a>
+          </div>
+
+          <div className="playground-card">
+            <a
               href="https://editor.p5js.org/jamesyuill/full/DxD5TZsUM"
               target="_blank"
             >
@@ -33,6 +42,15 @@ export const Playground = ({ playgroundSection }) => {
               target="_blank"
             >
               <img src="/p5-images/p5-colourful-grid.png" alt="" />
+            </a>
+          </div>
+
+          <div className="playground-card">
+            <a
+              href="https://editor.p5js.org/jamesyuill/full/UBsozvsqU"
+              target="_blank"
+            >
+              <img src="/p5-images/p5-connecting-spheres.png" alt="" />
             </a>
           </div>
 
@@ -74,10 +92,10 @@ export const Playground = ({ playgroundSection }) => {
 
           <div className="playground-card">
             <a
-              href="https://editor.p5js.org/jamesyuill/full/8LUitckPz"
+              href="https://editor.p5js.org/jamesyuill/full/MZwLi3x7N"
               target="_blank"
             >
-              <img src="/p5-images/p5-random-walker.png" alt="" />
+              <img src="/p5-images/p5-maurer-rose.png" alt="" />
             </a>
           </div>
           <div className="playground-card">
@@ -86,6 +104,15 @@ export const Playground = ({ playgroundSection }) => {
               target="_blank"
             >
               <img src="/p5-images/p5-switch-case.png" alt="" />
+            </a>
+          </div>
+
+          <div className="playground-card">
+            <a
+              href="https://editor.p5js.org/jamesyuill/full/h73HBInYv"
+              target="_blank"
+            >
+              <img src="/p5-images/p5-dancing-line.png" alt="" />
             </a>
           </div>
         </article>
