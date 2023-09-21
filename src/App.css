@@ -123,7 +123,7 @@ header h2 {
 }
 
 .projects {
-  height: 150vh;
+  height: 170vh;
 
   display: flex;
   flex-direction: column;
@@ -139,7 +139,7 @@ header h2 {
 }
 
 .playground {
-  height: 100vh;
+  height: 120vh;
 
   display: flex;
   flex-direction: column;
@@ -418,11 +418,18 @@ header h2 {
   border-radius: 5px;
 }
 
+.playground-title {
+  margin-top: 1rem;
+  background-color: hotpink;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
 .playground-article {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 75%;
+  width: 65%;
   margin-top: 1rem;
   gap: 1rem;
 }
@@ -435,8 +442,33 @@ header h2 {
 }
 
 .playground-card img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.playground-article-aframe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.playground-card-aframe {
+  padding: 0.7rem;
+  background-color: rgba(228, 248, 255, 80%);
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.playground-card-aframe img {
   width: 10rem;
-  height: 10rem;
+  height: 8rem;
+}
+.playground-card-aframe:hover {
+  background-color: rgba(255, 105, 180);
 }
 
 .playground-card:hover {
@@ -744,7 +776,7 @@ a {
   }
 
   .playground {
-    height: 100vh;
+    height: 120vh;
 
     display: flex;
     flex-direction: column;
@@ -784,11 +816,18 @@ a {
     border-radius: 5px;
   }
 
+  .playground-title {
+    margin-top: 1rem;
+    background-color: hotpink;
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+
   .playground-article {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 85%;
+    width: 98%;
     margin-top: 1rem;
     gap: 1rem;
   }
@@ -801,12 +840,37 @@ a {
   }
 
   .playground-card img {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .playground-article-aframe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 75%;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .playground-card-aframe {
+    padding: 0.7rem;
+    background-color: rgba(228, 248, 255, 80%);
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .playground-card-aframe img {
+    width: 10rem;
+    height: 8rem;
+  }
+  .playground-card-aframe:hover {
+    background-color: rgba(255, 105, 180);
   }
 
   .tech-skills-article {
-    width: 80%;
+    width: 85%;
   }
 
   .tech-skill-card {
@@ -916,7 +980,7 @@ a {
   }
 
   .about-me {
-    height: 120vh;
+    height: 150vh;
 
     display: flex;
     flex-direction: column;
@@ -942,13 +1006,17 @@ a {
     border-radius: 5px;
   }
 
+  .about-me-card p {
+    font-size: 0.7rem;
+  }
+
   .profile-image {
     margin-left: 5%;
     width: 150px;
   }
 
   .tech-skills-section {
-    height: 130vh;
+    height: 200vh;
 
     display: flex;
     flex-direction: column;
@@ -956,15 +1024,23 @@ a {
   }
 
   .projects {
-    height: 230vh;
+    height: 270vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  .projects-nav p {
+    font-size: 0.8rem;
+  }
+
+  .description p {
+    font-size: 0.8rem;
+  }
+
   .contact {
-    height: 160vh;
+    height: 220vh;
 
     display: flex;
     flex-direction: column;
@@ -976,7 +1052,7 @@ a {
   }
 
   .playground {
-    height: 100vh;
+    height: 120vh;
 
     display: flex;
     flex-direction: column;

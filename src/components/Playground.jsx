@@ -5,7 +5,7 @@ export const Playground = ({ playgroundSection }) => {
       <div className="playground">
         <h2>PLAYGROUND</h2>
         <div className="long-line-div"></div>
-
+        <div className="playground-title">P5 Sketches</div>
         <article className="playground-article">
           <div className="playground-card">
             <a
@@ -110,6 +110,18 @@ export const Playground = ({ playgroundSection }) => {
               target="_blank"
             >
               <img src="/p5-images/p5-dancing-line.png" alt="" />
+            </a>
+          </div>
+        </article>
+        <div className="playground-title">Aframe Sketches</div>
+        <article className="playground-article-aframe">
+          <div className="playground-card-aframe">
+            <a href="/shape-generator" target="_blank">
+              <img
+                src="/aframe-images/af-shape-generator.png"
+                alt="shape generator"
+              />
+              <p>Shape Generator</p>
             </a>
           </div>
         </article>

@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cube-generator" element={<AFShapeGenerator />} />
+        <Route path="/shape-generator" element={<AFShapeGenerator />} />
       </Routes>
     </>
   );
