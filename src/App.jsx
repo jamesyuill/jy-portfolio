@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import { Route, Routes } from 'react-router-dom';
 import AFShapeGenerator from './pages/AFShapeGenerator';
 import Test from './pages/Test';
+import AFTerrain from './pages/AFTerrain';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shape-generator" element={<AFShapeGenerator />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/terrain" element={<AFTerrain />} />
       </Routes>
     </>
   );
