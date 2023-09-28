@@ -8,7 +8,11 @@ export default function AboutMe({ aboutMe }) {
         <div className="long-line-div"></div>
         <article className="about-me-article">
           <div className="about-me-image">
-            <img className="profile-image" src="/jy-profile-image.jpg" alt="" />
+            <img
+              className="profile-image"
+              src="/images/jy-profile-image.jpg"
+              alt="A picture of me working a synth"
+            />
           </div>
           <div className="about-me-card">
             <p>Hi! I'm James.</p>

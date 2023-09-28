@@ -5,6 +5,7 @@ AFRAME.registerComponent('color-toggle', {
       //   el.setAttribute('position', { y: 2 });
       el.object3D.position.y += 1;
     };
+
     this.el.addEventListener('click', this.toggleColor);
   },
   remove: function () {

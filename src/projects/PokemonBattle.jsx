@@ -7,7 +7,7 @@ export default function PokemonBattle() {
         <h3>Northcoders Mini React App: Pokemon Battle!</h3>
         <div className="image-div">
           <a href="https://pokemon-battle-app.netlify.app/" target="_blank">
-            <img src="/project-images/pokemon-battle-desktop-and-mobile.png" />
+            <img src="/images/pokemon-battle-desktop-and-mobile.png" />
           </a>
         </div>
         <div className="desc">
