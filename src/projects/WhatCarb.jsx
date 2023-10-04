@@ -8,7 +8,7 @@ export default function WhatCarb() {
 
         <div className="image-div">
           <a href="https://what-carb.netlify.app/" target="_blank">
-            <img src="/images/what-carb-desktop-and-mobile.png" />
+            <img src="images/what-carb-desktop-and-mobile.png" />
           </a>
         </div>
         <div className="desc">

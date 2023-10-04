@@ -11,7 +11,7 @@ export default function CableTvSite() {
             href="https://github.com/jamesyuill/cabletv-three-site"
             target="_blank"
           >
-            <img src="/images/cable-tv-website.png" />
+            <img src="images/cable-tv-website.png" />
           </a>
         </div>
         <div className="desc">

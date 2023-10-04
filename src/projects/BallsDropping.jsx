@@ -9,7 +9,7 @@ export default function BallsDropping() {
         <div className="image-div">
           <a href="https://balls-dropping.netlify.app/" target="_blank">
             <img
-              src="/images/balls-dropping-desktop.png"
+              src="images/balls-dropping-desktop.png"
               alt="Preview of dropping balls app"
             />
           </a>

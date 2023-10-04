@@ -18,7 +18,7 @@ export default function Jynews() {
             href="http://jy-news-fullstack-project.netlify.app/"
             target="_blank"
           >
-            <img src="/images/jy-news-desktop-and-mobile.png" />
+            <img src="images/jy-news-desktop-and-mobile.png" />
           </a>
         </div>
         <div className="desc">
