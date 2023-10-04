@@ -6,16 +6,18 @@ import CableTvSite from '../projects/CableTvSite';
 import GuessWhat from '../projects/GuessWhat';
 import ProjectsNavBar from './ProjectsNavBar';
 import WhatCarb from '../projects/WhatCarb';
+import BallsDropping from '../projects/BallsDropping';
 
 export const Projects = ({ projectsSection }) => {
   const [displayProject, setDisplayProject] = useState(1);
 
   const projectsList = {
-    1: <WhatCarb />,
-    2: <GuessWhat />,
-    3: <Jynews />,
-    4: <PokemonBattle />,
-    5: <CableTvSite />,
+    1: <BallsDropping />,
+    2: <WhatCarb />,
+    3: <GuessWhat />,
+    4: <Jynews />,
+    5: <PokemonBattle />,
+    6: <CableTvSite />,
   };
 
   return (

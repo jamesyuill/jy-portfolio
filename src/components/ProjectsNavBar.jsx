@@ -17,7 +17,7 @@ export default function ProjectsNavBar({
           setDisplayProject(1);
         }}
       >
-        <p>What Carb?</p>
+        <p>Balls Dropping</p>
       </Link>
       |
       <Link
@@ -30,7 +30,7 @@ export default function ProjectsNavBar({
           setDisplayProject(2);
         }}
       >
-        <p>Guess What?!</p>
+        <p>What Carb?</p>
       </Link>
       |
       <Link
@@ -43,7 +43,7 @@ export default function ProjectsNavBar({
           setDisplayProject(3);
         }}
       >
-        <p>JY News App</p>
+        <p>Guess What?!</p>
       </Link>
       |
       <Link
@@ -56,7 +56,7 @@ export default function ProjectsNavBar({
           setDisplayProject(4);
         }}
       >
-        <p>Pokemon Battle App</p>
+        <p>JY News App</p>
       </Link>
       |
       <Link
@@ -67,6 +67,19 @@ export default function ProjectsNavBar({
         }
         onClick={() => {
           setDisplayProject(5);
+        }}
+      >
+        <p>Pokemon Battle App</p>
+      </Link>
+      |
+      <Link
+        className={
+          displayProject === 6
+            ? 'projects-nav-link-active'
+            : 'projects-nav-link'
+        }
+        onClick={() => {
+          setDisplayProject(6);
         }}
       >
         <p>Cable TV Website</p>
