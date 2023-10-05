@@ -28,7 +28,7 @@ export function Hello(props) {
   }, []);
 
   useEffect(() => {
-    if (windowWidth < 400) {
+    if (windowWidth < 514) {
       setSize(2);
     } else {
       setSize(5);

@@ -25,7 +25,6 @@ function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const { loaded, progress } = useProgress();
   useEffect(() => {
-    console.log(loaded, progress);
     if (loaded === 2) {
       setIsLoading(false);
     }

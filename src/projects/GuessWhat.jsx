@@ -16,7 +16,7 @@ export default function GuessWhat() {
 
         <div className="image-div">
           <a href="https://guess-what-gitkermit.netlify.app/" target="_blank">
-            <img src="images/guess-what-desktop.png" />
+            <img src="project-images/guess-what-desktop.png" />
           </a>
         </div>
         <div className="desc">
