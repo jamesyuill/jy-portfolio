@@ -112,6 +112,33 @@ export const Playground = ({ playgroundSection }) => {
               <img src="/p5-images/p5-dancing-line.png" alt="" />
             </a>
           </div>
+
+          <div className="playground-card">
+            <a
+              href="https://editor.p5js.org/jamesyuill/full/zbZDrsdd8"
+              target="_blank"
+            >
+              <img src="/p5-images/p5-growing-circles.png" alt="" />
+            </a>
+          </div>
+
+          <div className="playground-card">
+            <a
+              href="https://editor.p5js.org/jamesyuill/full/l0_sIhS_J"
+              target="_blank"
+            >
+              <img src="/p5-images/p5-microsoft-screensaver.png" alt="" />
+            </a>
+          </div>
+
+          <div className="playground-card">
+            <a
+              href="https://editor.p5js.org/jamesyuill/full/F-s9W5VXS"
+              target="_blank"
+            >
+              <img src="/p5-images/p5-hello-in-balls.png" alt="" />
+            </a>
+          </div>
         </article>
         <div className="playground-title">Aframe Sketches</div>
         <article className="playground-article-aframe">
@@ -122,6 +149,18 @@ export const Playground = ({ playgroundSection }) => {
                 alt="shape generator"
               />
               <p>Shape Generator</p>
+            </a>
+          </div>
+        </article>
+        <div className="playground-title">Three Sketches</div>
+        <article className="playground-article-aframe">
+          <div className="playground-card-aframe">
+            <a href="https://floating-grid.netlify.app/" target="_blank">
+              <img
+                src="/three-images/three-floating-grid.png"
+                alt="floating grid"
+              />
+              <p>Floating Grid</p>
             </a>
           </div>
         </article>
