@@ -155,12 +155,29 @@ export const Playground = ({ playgroundSection }) => {
         <div className="playground-title">Three Sketches</div>
         <article className="playground-article-aframe">
           <div className="playground-card-aframe">
-            <a href="https://floating-grid.netlify.app/" target="_blank">
+            <a href="https://floating-grid.netlify.app" target="_blank">
               <img
                 src="/three-images/three-floating-grid.png"
                 alt="floating grid"
               />
               <p>Floating Grid</p>
+            </a>
+          </div>
+
+          <div className="playground-card-aframe">
+            <a href="https://moody-ball.netlify.app" target="_blank">
+              <img src="/three-images/three-moody-ball.png" alt="moody ball" />
+              <p>Moody Ball</p>
+            </a>
+          </div>
+
+          <div className="playground-card-aframe">
+            <a href="https://cable-tv-website.netlify.app" target="_blank">
+              <img
+                src="/three-images/three-cable-tv-website.png"
+                alt="cable tv website"
+              />
+              <p>cable tv Website</p>
             </a>
           </div>
         </article>
