@@ -139,7 +139,7 @@ header h2 {
 }
 
 .playground {
-  height: 120vh;
+  height: 140vh;
 
   display: flex;
   flex-direction: column;
@@ -776,7 +776,7 @@ a {
   }
 
   .playground {
-    height: 120vh;
+    height: 190vh;
 
     display: flex;
     flex-direction: column;
@@ -862,8 +862,8 @@ a {
   }
 
   .playground-card-aframe img {
-    width: 10rem;
-    height: 8rem;
+    width: 9rem;
+    height: 7rem;
   }
   .playground-card-aframe:hover {
     background-color: rgba(255, 105, 180);
@@ -1052,7 +1052,7 @@ a {
   }
 
   .playground {
-    height: 120vh;
+    height: 160vh;
 
     display: flex;
     flex-direction: column;
