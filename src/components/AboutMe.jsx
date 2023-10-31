@@ -17,22 +17,18 @@ export default function AboutMe({ aboutMe }) {
           <div className="about-me-card">
             <p>Hi! I'm James.</p>
             <p>
-              I’m a Junior Full Stack JavaScript Developer, looking to implement
-              the skills I’ve acquired during my time enrolled in Northcoders
-              Software Development bootcamp.
+              I’m a Junior Full Stack Javascript Developer, looking for a career
+              in the Technology industry.
             </p>
             <p>
-              After teaching myself visual software Blender and Touchdesigner, I
-              realised that I actually like learning, and more specifically,
-              teaching myself new skills. Coding was initially an extension of
-              this, working with Javascript libraries P5.js and Three.js really
-              inspired me to learn more.
+              After teaching myself coding through experimenting with libraries
+              Three.js and P5.js. I enrolled in the Northcoders Software
+              Development bootcamp, where I learned full stack development.
             </p>
             <p>
-              Most of my working career has been in the music industry,
-              producing music for myself and other artists, but I’m now ready
-              for a career in technology and excited about developing new
-              skills.
+              Most of my working life has been in the music industry, producing
+              music for myself and others. Now I’m ready for a career in
+              Technology and excited about developing new skills.
             </p>
           </div>
         </article>
