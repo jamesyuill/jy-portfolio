@@ -17,8 +17,15 @@ export default function AboutMe({ aboutMe }) {
           <div className="about-me-card">
             <p>Hi! I'm James.</p>
             <p>
-              I’m a Junior Full Stack Javascript Developer, looking for a career
-              in the Technology industry.
+              After a successful career as a music producer, working and touring
+              with some amazing artists, I'm applying the same creative skills
+              to software engineering.
+            </p>
+            <p>
+              I was known for playing live shows that would range from stripped
+              back acoustic to relatively heavy techno. I would spend hours
+              programming intricate light shows, triggered by midi and even
+              developed a real-time bullet-time rig.
             </p>
             <p>
               After teaching myself coding through experimenting with libraries
@@ -26,9 +33,8 @@ export default function AboutMe({ aboutMe }) {
               Development bootcamp, where I learned full stack development.
             </p>
             <p>
-              Most of my working life has been in the music industry, producing
-              music for myself and others. Now I’m ready for a career in
-              Technology and excited about developing new skills.
+              I'm now no longer touring and spend my time building apps,
+              creating art in blender, or learning new libraries.
             </p>
           </div>
         </article>

@@ -140,18 +140,7 @@ export const Playground = ({ playgroundSection }) => {
             </a>
           </div>
         </article>
-        <div className="playground-title">Aframe Sketches</div>
-        <article className="playground-article-aframe">
-          <div className="playground-card-aframe">
-            <a href="/shape-generator" target="_blank">
-              <img
-                src="/aframe-images/af-shape-generator.png"
-                alt="shape generator"
-              />
-              <p>Shape Generator</p>
-            </a>
-          </div>
-        </article>
+
         <div className="playground-title">Three Sketches</div>
         <article className="playground-article-aframe">
           <div className="playground-card-aframe">
@@ -178,6 +167,18 @@ export const Playground = ({ playgroundSection }) => {
                 alt="cable tv website"
               />
               <p>cable tv Website</p>
+            </a>
+          </div>
+        </article>
+        <div className="playground-title">Aframe Sketches</div>
+        <article className="playground-article-aframe">
+          <div className="playground-card-aframe">
+            <a href="/shape-generator" target="_blank">
+              <img
+                src="/aframe-images/af-shape-generator.png"
+                alt="shape generator"
+              />
+              <p>Shape Generator</p>
             </a>
           </div>
         </article>

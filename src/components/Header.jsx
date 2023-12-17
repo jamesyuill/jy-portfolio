@@ -14,7 +14,7 @@ export const Header = ({
       <header>
         <div className="header-name">
           <h1>James Yuill</h1>
-          <h2>Full Stack Developer</h2>
+          <h2>Software Engineer</h2>
         </div>
       </header>
       <Nav

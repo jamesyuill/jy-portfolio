@@ -20,6 +20,14 @@ export const TechnicalSkills = ({ technicalSkills }) => {
               </div>
             </a>
           </div>
+          <a href="https://www.typescriptlang.org/docs/" target="_blank">
+            <div className="tech-skill-card">
+              <div className="tech-and-image">
+                <img src="images/typescript.png" alt="Typescript logo" />
+              </div>
+              <p>TypeScript</p>
+            </div>
+          </a>
 
           <a href="https://react.dev/" target="_blank">
             <div className="tech-skill-card">
@@ -27,6 +35,15 @@ export const TechnicalSkills = ({ technicalSkills }) => {
                 <img src="images/react.png" alt="React logo" />
               </div>
               <p>React</p>
+            </div>
+          </a>
+
+          <a href="https://nextjs.org/docs" target="_blank">
+            <div className="tech-skill-card">
+              <div className="tech-and-image">
+                <img src="images/next.png" alt="Next logo" />
+              </div>
+              <p>Next</p>
             </div>
           </a>
 
@@ -67,6 +84,14 @@ export const TechnicalSkills = ({ technicalSkills }) => {
                 <img src="images/express.png" alt="Express.js logo" />
               </div>
               <p>Express.js</p>
+            </div>
+          </a>
+          <a href="https://graphql.org/learn/" target="_blank">
+            <div className="tech-skill-card">
+              <div className="tech-and-image">
+                <img src="images/graphql.png" alt="GraphQL logo" />
+              </div>
+              <p>GraphQL</p>
             </div>
           </a>
           <a
