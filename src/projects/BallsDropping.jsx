@@ -19,13 +19,13 @@ export default function BallsDropping() {
             <br />
 
             <p>
-              - Build in vanilla Three.js and using Tone.js for the audio
-              elements
+              - Built in vanilla Three.js and using Tone.js for the audio
+              elements.
             </p>
             <p>
               - The aim was to get a visual representation of a bouncing ball,
-              but once I'd built one ball I then wanted to generate more. I then
-              restructured the bouncing ball as an extended class with it's own
+              but once I'd built one ball, I then wanted to generate more. I
+              refactored the bouncing ball as an extended class with it's own
               methods.
             </p>
             <p>
