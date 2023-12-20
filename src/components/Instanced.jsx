@@ -24,6 +24,7 @@ export default function Instanced() {
       temp.rotation.set(10, Math.random() * 10, Math.random() * 5);
       temp.scale.set(Math.random(), Math.random(), Math.random());
       temp.updateMatrix();
+      temp.frustumCulled = false;
       instancedMeshRef.current.setMatrixAt(id, temp.matrix);
       instancedMeshRef.current.setColorAt(
         id,
