@@ -7,6 +7,7 @@ import GuessWhat from '../projects/GuessWhat';
 import ProjectsNavBar from './ProjectsNavBar';
 import WhatCarb from '../projects/WhatCarb';
 import BallsDropping from '../projects/BallsDropping';
+import EtsyInstaScraper from '../projects/EtsyInstaScraper';
 
 export const Projects = ({ projectsSection }) => {
   const [displayProject, setDisplayProject] = useState(1);
@@ -15,9 +16,10 @@ export const Projects = ({ projectsSection }) => {
     1: <BallsDropping />,
     2: <WhatCarb />,
     3: <GuessWhat />,
-    4: <Jynews />,
-    5: <PokemonBattle />,
-    6: <CableTvSite />,
+    4: <EtsyInstaScraper />,
+    5: <Jynews />,
+    6: <PokemonBattle />,
+    7: <CableTvSite />,
   };
 
   return (

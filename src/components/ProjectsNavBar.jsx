@@ -56,7 +56,7 @@ export default function ProjectsNavBar({
           setDisplayProject(4);
         }}
       >
-        <p>JY News App</p>
+        <p>Etsy to Instagram Scraper</p>
       </Link>
       |
       <Link
@@ -69,7 +69,7 @@ export default function ProjectsNavBar({
           setDisplayProject(5);
         }}
       >
-        <p>Pokemon Battle App</p>
+        <p>JY News App</p>
       </Link>
       |
       <Link
@@ -80,6 +80,19 @@ export default function ProjectsNavBar({
         }
         onClick={() => {
           setDisplayProject(6);
+        }}
+      >
+        <p>Pokemon Battle App</p>
+      </Link>
+      |
+      <Link
+        className={
+          displayProject === 7
+            ? 'projects-nav-link-active'
+            : 'projects-nav-link'
+        }
+        onClick={() => {
+          setDisplayProject(7);
         }}
       >
         <p>Cable TV Website</p>
